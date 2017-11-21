@@ -1,22 +1,99 @@
 * {
-	padding: 0 !important;
-	margin: 0 !important;	
+	padding: 0;
+	margin: 0;	
 }
 
 #main-content {
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	background-image: url(../img/soccer.jpeg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 
 header {
-	background-color: rgba(0, 0, 0, .9);
+	background-color: rgba(0, 0, 0, 1);
 	width: 100%;
 	color: red;
 	height: 100px;
+	margin-bottom: 40px;
+	font-family: 'Old Standard TT', serif;
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 
+.iso-nav {
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center; 
+	margin-bottom: 40px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
+}
+
+.iso-nav > ul {
+	list-style-type: none;
+}
+
+.iso-nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+	background: black;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
+	transition-property: background;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+}
+
+.iso-nav ul li:hover {
+	background-color: red; 
+}
+
+#panels {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.panel, .panel-default {
+	width: 40%;
+	margin-bottom: 40px;
+	border-radius: 0;
+}
+
+.panel .panel-heading {
+	background-color: black;
+	text-align: center;
+	border-radius: 0;
+}
+
+.panel-heading h3 {
+	color: red;
+	font-family: 'Old Standard TT', serif;
+	font-size: 2em;
+}
+
+.panel-body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
+}
+
+footer {
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	font-family: 'Raleway', sans-serif;
+}
+
+footer p {
+	font-size: 1.3em;
+	color: #fff;
+}
